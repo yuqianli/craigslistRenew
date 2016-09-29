@@ -3,7 +3,7 @@
 import pyautogui
 import os
  
-counter = 0
+counter = 0 #count the # of exceptions occur
 
 while True:
     try:
@@ -15,8 +15,7 @@ while True:
         pyautogui.time.sleep(2)
 
         pyautogui.press('backspace')
-        #emailButtonLocationX,emailButtonLocationY  = pyautogui.locateCenterOnScreen('email.png')
-        #pyautogui.click(emailButtonLocationX, emailButtonLocationY)
+
         pyautogui.time.sleep(2)
 
 	# Exception handle when pyautogui can't locate the renew button on the screen
@@ -28,7 +27,3 @@ while True:
         if counter >2:
              pyautogui.press('pgup')
        
-
-
-
-
